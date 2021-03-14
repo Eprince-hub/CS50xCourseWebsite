@@ -1,0 +1,728 @@
+/* This is a CSS comment. Put your CSS styling below this line */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=RocknRoll+One&display=swap');
+
+:root {
+  --main_background: #273036;
+  --text_color: white;
+  --sec_color: #FF0066;
+  --header: RGBA(39,48,54,1);
+  --transition: all 0.5s ease-in-out;
+  --text-font: Raleway, sans-serif;
+  --header-font: RocknRoll+One, sans-serif;
+}
+
+* {
+  margin: o;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* header start*/
+.header {
+width: 100%;
+height: 5rem;
+background: var(--header);
+display: flex;
+align-items: center;
+justify-content: space-between;
+color: var(--text_color);
+font-family: var(--header-font);
+font-size: 1.3rem;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 100;
+}
+
+.header #logo {
+  margin-left: 15px;
+}
+
+#navigation {
+width: 18rem;
+height: 25rem;
+position: absolute;
+top: 0rem;
+right: 0;
+border-bottom-left-radius: 0.5rem;
+transition: all 0.5s ease-in-out;
+transform: translateX(400px);
+background-color: green;
+background-image: url(/images/background_pic.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+background-blend-mode: multiply, screen;
+}
+
+.menu-svgs #menu-hide {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 1rem;
+  right: 0.5rem;
+  cursor: pointer;
+  color: var(--text_color);
+  display: none;
+  transition: var(--transition);
+}
+
+#navigation ul {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+#navigation .nav-link {
+  padding: 1rem;
+  font-size: 1.5rem;
+  list-style: none;
+  font-weight: bold;
+  font-family: RocknRoll+One, sans-serif;
+}
+
+#navigation .nav-link a {
+  text-decoration: none;
+  color: var(--text_color);
+  font-family: var(--header-font);
+}
+
+.menu-svgs #menu-show {
+color: var(--text_color);
+height: 35px;
+width: 35px;
+cursor: pointer;
+margin-right: 10px;
+transition: var(--transition);
+}
+/* header end*/
+
+/* Hero Page Start*/
+.hero-page {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  padding: 5rem 0rem 2rem 0rem;
+  background-color: green;
+  background-image: url(/images/background_pic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: multiply, screen;
+}
+
+.hero-page .hero-page-text {
+  width: 95%;
+  height: 50%;
+  color: var(--text_color);
+  font-family: var(--text-font);
+  position: relative;
+}
+
+.hero-page-text h1 {
+  font-size: 2rem;
+  margin-top: 2.5rem;
+}
+
+.hero-page-text h1 span {
+  color: var(--sec_color);
+  margin-top: 0.9rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  display: block;
+  font-size: 2.7rem;
+  font-family: var(--text-font);
+  letter-spacing: 0.2rem;
+  transition: var(--transition);
+  animation: line 2s ease-in-out alternate infinite;
+}
+
+.hero-page-text h2 {
+  font-size: 1.7rem;
+}
+
+.hero-page-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-page-text .hero-page-btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  margin: 0 auto 1.5rem auto;
+  border-radius: 1rem;
+  border: none;
+  background-image: linear-gradient(to right, #000000 0%, green 60%);
+  background-size: 200%;
+  box-shadow: gold 3px 3px 5px;
+  transition: var(--transition);
+  cursor: pointer;
+  outline: none;
+}
+
+.hero-page-text .hero-page-btn a {
+  text-decoration: none;
+  color: var(--text_color);
+  font-family: var(--header-font);
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.hero-page-text .hero-page-socials {
+  width: 2.5rem;
+  height: 10rem;
+  position: absolute;
+  top: 30vh;
+  right: 0;
+}
+
+.hero-page-text .hero-page-socials img {
+  padding: 0.3rem;
+  transition: var(--transition);
+}
+
+.facebook, .instagram, .github {
+  position: relative;
+  right: 0;
+  width: 3.5rem;
+  transition: var(--transition);
+}
+/* Hero Page End*/
+
+/* About Me Section Start */
+.about-me {
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--text_color);
+  background: var(--main_background);
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.about-me .about-me-image {
+  width: 25rem;
+  height: 20rem;
+  background-color: #273036;
+  background-image: url(/images/profile_pic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: lighten;
+}
+
+.about-me .about-me-info {
+  width: 80%;
+  height: 70%;
+  font-family: var(--text-font);
+}
+
+.about-me .about-me-info h2 {
+  font-family: var(--header-font);
+  font-size: 2rem;
+}
+
+.about-me .about-me-info p {
+  text-align: justify;
+  font-size: 1.1rem;
+  display: inline;
+}
+
+.about-me .about-me-btn {
+display: inline;
+margin-left: -3px;
+background: transparent;
+border: none;
+font-weight: bold;
+outline: none;
+cursor: pointer;
+}
+
+.about-me .about-me-btn a {
+  text-decoration: none;
+  color: var(--sec_color);
+  transition: var(--transition);
+}
+/* About Me Section end */
+
+/* skill Section start */
+.skill-section {
+  width: 100%;
+  height: 80vh;
+  padding-top: 0.1rem;
+  background: lightgray;
+}
+
+.skill-section .skill-section-info1 {
+  width: 80%;
+  height: 8rem;
+  margin: auto;
+  text-align: center;
+  border-left: 3px solid #dd7732;
+  border-right: 3px solid var(--sec_color);
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  box-shadow: lightslategray 3px 3px 6px 1px;
+  border-radius: 1rem;
+}
+
+.skill-section .skill-section-info1 h2 {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: var(--header-font);
+  margin-bottom: -1.2rem;
+}
+
+
+.skill-section .skill-section-info1 h4 {
+  font-size: 1.3rem;
+  font-family: var(--header-font);
+  line-height: 0.3rem;
+  margin-bottom: -0.3rem;
+}
+
+.skill-section .skill-section-info2 {
+  width: 80%;
+  height: 15rem;
+  margin: auto;
+  text-align: center;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+  box-shadow: lightslategray 3px 3px 6px 1px;
+  margin-top: 1.5rem;
+  border-left: 3px solid var(--sec_color);
+  border-right: 3px solid #dd7732;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-radius: 1rem;
+}
+
+.skill-section .skill-section-info2 h2 {
+font-size: 2.5rem;
+}
+
+.skill-section .skill-section-info2 .skill-section-info2-image {
+  display: flex;
+  align-content: center;
+  margin: auto;
+  width: 10rem;
+}
+/* skill Section end */
+
+/*project section*/
+.project-section {
+  width: 100%;
+  height: 280vh;
+  background: var(--main_background);
+  padding-top: 0.1rem;
+  text-align: center;
+  color: var(--text_color);
+}
+
+.project-section .project-container {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.project-section h2 {
+  font-size: 1.9rem;
+  font-family: var(--header-font);
+}
+
+.project-section .projects {
+  width: 90%;
+  height: 31%;
+  margin: auto;
+  font-family: var(--text-font);
+}
+
+.project-section .projects:nth-child(2) {
+  margin-top: -1.9rem;
+}
+
+.project-section .projects h4 {
+  font-size: 1.1rem;
+}
+
+.project-section .projects img {
+  display: block;
+  margin: auto;
+  max-width: 60%;
+  border-radius: 1rem;
+  box-shadow: black 3px 3px 6px 1px;
+}
+
+.project-section .projects p {
+  text-align: justify;
+  padding: 0rem 2rem;
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.project-section .project-btn {
+  font-size: 1rem;
+  padding: 0.4rem 0.7rem;
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.project-section .project-btn a{
+  text-decoration: none;
+  color: black;
+} 
+
+button:active, a:active {
+ border: 1px solid var(--sec_color);
+ border-radius: 1px;
+}
+
+#footer-section {
+  width: 100%;
+  height: 50vh;
+  padding-top: 11rem;
+  text-align: center;
+  color: white;
+  font-family: var(--header-font);
+  font-size: 1.2rem;
+  background: var(--main_background);
+}
+
+#footer-section a {
+  display: inline-block;
+  margin-right: 0.8rem;
+  text-decoration: none;
+  color: white;
+}
+
+
+.facebook:hover, .instagram:hover, .github:hover {
+  width: 3.8rem;
+  right: 1rem;
+}
+
+.hero-page-text .hero-page-btn:hover {
+  padding: 0.9rem 2.1rem;
+  background-image: linear-gradient(to left, #000000 0%, green 60%);
+  background-size: 100%;
+  box-shadow: gold 3px 3px 10px;
+}
+
+.menu-svgs #menu-hide:hover {
+transform: rotate(180deg);
+}
+
+.about-me .about-me-btn a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--text_color);
+}
+
+/*text animation */
+@keyframes line {
+  from {
+      text-decoration: none;
+  }
+  to {
+      text-decoration: underline var(--text_color);
+  }
+}
+
+
+/*Contact Page*/
+.contact-info {
+  width: 100%;
+  height: 120vh;
+  background: #EDEDED;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.contact-info h1 {
+  font-family: var(--header-font);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-info .contacts {
+  max-width: 80%;
+  max-height: 10rem;
+  background: white;
+  margin: 1rem auto;
+  padding: 1rem 0rem;
+  border-radius: 1rem;
+  box-shadow: lightslategray 3px 3px 6px 1px;
+}
+.map {
+  width: 100%;
+  text-align: center;
+}
+#map{
+  width: 80%;
+  height: 20rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  margin: auto;
+}
+
+.contact-form {
+  width: 100%;
+  height: 120vh;
+  background: var(--main_background);
+  text-align: center;
+  color: var(--text_color);
+}
+
+.contact-form .form-container {
+  width: 80%;
+  height: 23rem;
+  margin: auto;
+  padding: 1rem 0rem;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.contact-form .form-deco {
+  width: 100%;
+  height: 2rem;
+  outline: none;
+  border-radius: 0.5rem;
+  padding-left: 0.3rem;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+.contact-form .message-deco {
+  width: 100%;
+  border-radius: 0.5rem;
+  outline: none;
+}
+.contact-form .submit-btn {
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-family: var(--header-font);
+  cursor: pointer;
+}
+/* Contact Page End*/
+
+/* About Page*/
+.about-me-page {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main_background);
+  text-align: center;
+  color: var(--text_color);
+  padding: 1rem;
+}
+
+.about-me-page .about-me-page-info {
+width: 80%;
+height: 50%;
+margin: auto;
+padding-top: 10rem;
+}
+
+
+/*Media Queries*/
+@media only screen and (min-width: 800px) {
+  .menu-svgs #menu-hide,
+  .menu-svgs #menu-show {
+    display: none;
+  }
+
+#navigation {
+width: 100%;
+height: 5rem;
+position: none;
+transform: none;
+background-color: transparent;
+background-image: none;
+}
+
+#navigation ul {
+  margin-top: 0rem;
+  text-align: right;
+  margin-right: 1.5rem;
+  padding-top: 1rem;
+}
+
+#navigation ul li {
+display: inline-block;
+}
+
+.hero-page .hero-page-text .hero-page-wrapper {
+  width: 90%;
+  height: 25rem;
+  padding-right: 10rem;
+}
+
+.hero-page .hero-page-text .hero-page-wrapper h1 {
+font-size: 300%;
+}
+
+.hero-page .hero-page-text .hero-page-wrapper h1 span {
+font-size: 150%;
+}
+
+.hero-page .hero-page-text .hero-page-wrapper h2, h3 {
+font-size: 250%;
+}
+
+.about-me {
+  flex-direction: row-reverse;
+  padding: 1rem;
+}
+
+.about-me .about-me-image {
+  width: 50%;
+  height: 25rem;
+  padding-left: 2rem;
+}
+
+.about-me .about-me-info {
+  width: 50%;
+  padding: 8rem 2rem 0rem 1rem;
+}
+
+.skill-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.5rem;
+}
+
+.skill-section .skill-section-info1 {
+  width: 50%;
+  height: 80%;
+  margin: 1rem 1rem 0rem 0rem;
+  border-radius: 1rem;
+}
+
+.skill-section .skill-section-info2 {
+  width: 50%;
+  height: 80%;
+  margin: 1rem 0rem 0rem 1rem;
+  border-left: 3px solid #dd7732;
+  border-right: 3px solid var(--sec_color);
+}
+
+.skill-section .skill-section-info1 h4 {
+  font-size: 2rem;
+  font-family: var(--header-font);
+  margin-top: 4rem;
+}
+
+
+.project-section {
+height:200vh;
+}
+
+.project-section .project-container {
+  width: 100%;
+  height: 200vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: auto;
+  flex-shrink: auto;
+  padding: 1.5rem;
+}
+
+.project-section .projects {
+ flex-basis: 50%;
+ height: 40rem;
+ justify-items: center;
+}
+
+.project-section .projects img {
+  width: 100%;
+}
+
+.project-section .projects p {
+  width: 100%;
+
+}
+
+.project-section .projects:nth-child(2) {
+  margin-top: 0.7rem;
+}
+
+.project-section .projects:nth-child(3) {
+  margin-top: -8rem;
+}
+
+/* contact page */
+.contact-info {
+  height: 70vh;
+} 
+.contact-page-flex {
+  width: 100%;
+  height: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ padding: 1rem;
+}
+
+.contact-info .contacts {
+  height: 60rem;
+  width: 20rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.5rem;
+  height: 60vh;
+}
+
+.map {
+  width: 100%;
+  text-align: center;
+  margin-right: 1rem;
+  margin-top: 2rem;
+}
+
+#map{
+  width: 100%;
+  padding-bottom: 0;
+}
+
+.contact-form .form-container {
+  padding: 0;
+  margin: 0;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+}
